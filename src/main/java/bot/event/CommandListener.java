@@ -1,6 +1,6 @@
-package event;
+package bot.event;
 
-import command.StaticCommands;
+import bot.command.StaticCommands;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -41,7 +41,7 @@ public class CommandListener extends ListenerAdapter {
                         .addField("!download", "download modpack link", false)
                         .addField("!bug", "bug report", false)
                         .addField("!kekw", "kekw pic", false)
-                        .addField("!gay", "secret command", false)
+                        .addField("!gay", "secret bot.command", false)
                         .setFooter("IMPACT BOT")
                         .setThumbnail("https://cdn.discordapp.com/attachments/672463927476748289/838544798435770408/2123.png");
                 e.getChannel().sendMessage(em.build()).queue();
@@ -52,7 +52,7 @@ public class CommandListener extends ListenerAdapter {
                         .setTitle("IMPACT WIKI")
                         .setColor(new Color(51, 152, 189))
                         .setImage("https://media.discordapp.net/attachments/839579228281372702/839613295546859530/unknown.png")
-                        .setDescription("https://gtimpact.space/?page_id=39")
+                        .setDescription("https://gtimpact.space/wiki")
                         .setFooter("IMPACT BOT")
                         .setThumbnail("https://cdn.discordapp.com/attachments/672463927476748289/838544798435770408/2123.png");
                 e.getChannel().sendMessage(em.build()).queue();
@@ -63,7 +63,7 @@ public class CommandListener extends ListenerAdapter {
                         .setTitle("IMPACT DOWNLOAD")
                         .setColor(new Color(51, 152, 189))
                         .setImage("https://media.discordapp.net/attachments/838702315149197322/838702364545253406/impactTwitch.png")
-                        .setDescription("https://gtimpact.space/?page_id=33")
+                        .setDescription("https://gtimpact.space/download")
                         .setFooter("IMPACT BOT")
                         .setThumbnail("https://cdn.discordapp.com/attachments/672463927476748289/838544798435770408/2123.png");
                 e.getChannel().sendMessage(em.build()).queue();
@@ -73,7 +73,7 @@ public class CommandListener extends ListenerAdapter {
                 EmbedBuilder em = new EmbedBuilder()
                         .setTitle("KEKW")
                         .setColor(new Color(51, 152, 189))
-                        .setImage("https://cdn.discordapp.com/attachments/839579228281372702/839598330165461022/Spanish-laughing-guy-meme.png")
+                        .setImage("https://c.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.gif")
                         .setFooter("IMPACT BOT")
                         .setThumbnail("https://cdn.discordapp.com/attachments/672463927476748289/838544798435770408/2123.png");
                 e.getChannel().sendMessage(em.build()).queue();

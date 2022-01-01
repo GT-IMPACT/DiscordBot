@@ -1,4 +1,4 @@
-package command;
+package bot.command;
 
 public enum StaticCommands {
     HELP("help"),
