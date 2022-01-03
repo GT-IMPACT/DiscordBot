@@ -9,7 +9,10 @@ public class App {
 	public static void main(String[] args) throws Exception {
 		Config.startConfig();
 		JDA jda = JDABuilder.createDefault(Config.TOKEN).build();
-		System.out.println("Bot started with TOKEN: " + Config.TOKEN.substring(0, 10) + "***");
+		System.out.println("========== BOT STARTED ==========");
+		System.out.println("DISCORD_TOKEN: " + Config.TOKEN.substring(0, 10) + "***");
+		System.out.println("GIT_TOKEN: " + Config.GITTOKEN.substring(0, 10) + "***");
+		System.out.println("=================================");
 		jda.addEventListener(new CommandListener());
 		jda.awaitReady();
 	}

@@ -8,6 +8,7 @@ import java.util.Properties;
 public class Config {
 	
 	public static String TOKEN;
+	public static String GITTOKEN;
 	
 	public Config() {
 		try {
@@ -17,6 +18,7 @@ public class Config {
 			if (path.mkdir()) {
 				FileOutputStream fos = new FileOutputStream(PATH_CFG);
 				property.setProperty("token", "");
+				property.setProperty("git_token", "");
 				property.store(fos, "Property File Bot");
 				fos.close();
 				return;
@@ -24,6 +26,7 @@ public class Config {
 			FileInputStream fis = new FileInputStream(PATH_CFG);
 			property.load(fis);
 			TOKEN = property.getProperty("token");
+			GITTOKEN = property.getProperty("git_token");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

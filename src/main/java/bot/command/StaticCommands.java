@@ -7,6 +7,7 @@ public enum StaticCommands {
     WIKI("wiki"),
     DOWNLOAD("download"),
     KEKW("kekw"),
+    ISSUE("issue"),
 
     _NULL("")
     ;
