@@ -1,16 +1,15 @@
 package bot.command;
 
 public enum StaticCommands {
-    HELP("help"),
-    GAY("gay"),
+    _NULL(""),
     BUG("bug"),
-    WIKI("wiki"),
     DOWNLOAD("download"),
-    KEKW("kekw"),
+    GAY("gay"),
+    HELP("help"),
     ISSUE("issue"),
-
-    _NULL("")
-    ;
+    KEKW("kekw"),
+    NPE("npe"),
+    WIKI("wiki");
 
     private final String command;
 
@@ -23,7 +22,7 @@ public enum StaticCommands {
     }
 
     public static StaticCommands commandParser(String msg) {
-        for(StaticCommands a : StaticCommands.values()) {
+        for (StaticCommands a : StaticCommands.values()) {
             if (a.getCommand().equals(msg)) {
                 return a;
             }
